@@ -75,6 +75,7 @@ int main(int argc, char* argv[]){
 	for(int N =2; N<end; N++){
 		if((*numList)[N] == true){
 			count += 1;
+			// cout << N << endl;
 		}
 	}
 
