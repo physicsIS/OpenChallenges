@@ -5,14 +5,13 @@ int led3 = 4;
 int led4 = 5;
 int led5 = 6;
 
-// Hasta qué número evaluar primos.
-int end = 500;
 // Velocidad de visualización (speed: 1 - 10).
 int speed = 5;
 int time = 100*(11-speed);
 
-// Lista que representa los números a evaluar
+// Hasta qué número evaluar primos.
 #define end 500
+// Lista que representa los números a evaluar
 bool numList[end];
 
 // Número de LEDs (en este caso, 5).
@@ -42,7 +41,7 @@ void loop(){
   // Evaluar todos los números hasta 'end'.
   for(int X = 1; X < end; X++){
     // Calcular si X es primo, buscando hasta X/2.
-    for(int E = 2; E <= X/2; E++){
+    for(int E = 2; E*E <= X; E++){
       // Detectar divisores de 'X'.
       if(X % E == 0){
         numList[X] = false;
