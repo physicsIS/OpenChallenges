@@ -77,7 +77,7 @@ int main(int argc, char* argv[]){
 
 	// Obtener la cantidad de números primos.
 	int count = 0;
-	for(int N =2; N<end; N++){
+	for(int N = 2; N<end; N++){
 		if((*numList)[N] == true){
 			count += 1;
 		}
@@ -95,6 +95,6 @@ int main(int argc, char* argv[]){
 
 	cout << "Límite superior: " << end << endl;
 	cout << "Tiempo: " << time2-time1 << " (s)" << endl;
-	cout << "NÚmero de procesos: " << num_threads << endl;
+	cout << "NÚmero de hilos: " << num_threads << endl;
 	cout << "Números primos encontrados: " << count << endl;
 }
